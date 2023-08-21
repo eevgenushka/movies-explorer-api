@@ -32,9 +32,7 @@ function login (req, res, next) {
           { expiresIn: '7d' }
         )
         return res.status(200).send({
-          _id: user._id,
-          name: user.name,
-          email: user.email,
+          token
     })
       })
     })
