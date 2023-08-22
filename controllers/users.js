@@ -16,13 +16,13 @@ function login(req, res, next) {
     .then((user) => {
       if (!user) {
         return next(
-          new ValidationError('Неверный адрес электронной почты или пароль')
+          new ValidationError('Неверный адрес электронной почты или пароль'),
         );
       }
       return bcrypt.compare(password, user.password).then((matched) => {
         if (!matched) {
           return next(
-            new ValidationError('Неверный адрес электронной почты или пароль')
+            new ValidationError('Неверный адрес электронной почты или пароль'),
           );
         }
         const token = jwt.sign(
@@ -102,12 +102,12 @@ function updateUser(req, res, next) {
       if (err.code === 11000) {
         return next(
           new AlreadyExistError(
-            'Пользователь с таким адресом электронной почты уже зарегистрирован'
+            'Пользователь с таким адресом электронной почты уже зарегистрирован',
           ),
         );
       }
       if (err.name === 'CastError' || err.name === 'ValidationError') {
-        return next(new NotFoundError('Отправленные некорректные данные'))
+        return next(new NotFoundError('Отправленные некорректные данные'));
       }
       return next(err);
     });
