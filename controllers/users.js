@@ -10,7 +10,7 @@ const ValidationError = require('../errors/ValidationError');
 
 function login (req, res, next) {
   const { email, password } = req.body
-
+console.log(req.body);
   return User
     .findOne({ email })
     .select('+password')
