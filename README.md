@@ -1,3 +1,9 @@
-# movies-explorer-api
+# Дипломаная работа 2 этап movies-explorer-api
 
-https://api.movies.nomoredomainsicu.ru/
+1. Созданы схемы и модели ресурсов API. 
+2. Созданы роуты и контроллеры. 
+3. Реализованна аутентификацию и авторизацию.
+4. Реализованно логирование.
+5. Выполнен деплой проекта на сервер.
+
+Backend https://api.movies.nomoredomainsicu.ru/
