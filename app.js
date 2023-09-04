@@ -25,6 +25,8 @@ app.use(cors({
     'http://api.movies.nomoredomainsicu.ru/signin',
     'http://api.movies.nomoredomainsicu.ru/signup',
     'https://api.movies.nomoredomainsicu.ru',
+    'https://api.movies.nomoredomainsicu.ru/signin',
+    'https://api.movies.nomoredomainsicu.ru/signup',
     'http://movies.nomoredomainsicu.ru',
     'https://movies.nomoredomainsicu.ru',
   ],
