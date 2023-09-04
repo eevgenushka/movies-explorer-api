@@ -22,6 +22,8 @@ app.use(cors({
     'http://localhost:3000',
     'https://localhost:3000',
     'http://api.movies.nomoredomainsicu.ru',
+    'http://api.movies.nomoredomainsicu.ru/signin',
+    'http://api.movies.nomoredomainsicu.ru/signup',
     'https://api.movies.nomoredomainsicu.ru',
     'http://movies.nomoredomainsicu.ru',
     'https://movies.nomoredomainsicu.ru',
