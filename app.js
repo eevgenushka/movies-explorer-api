@@ -7,7 +7,7 @@ const ErrorHandler = require('./errors/ErrorHandler');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 const routers = require('./routes');
 
-const { PORT = 3000, DB_ADDRESS = 'mongodb://127.0.0.1:27017/bitfilmsdb' } = process.env;
+const { PORT = 4000, DB_ADDRESS = 'mongodb://127.0.0.1:27017/bitfilmsdb' } = process.env;
 
 const app = express();
 
@@ -23,10 +23,10 @@ app.use(cors({
     'https://localhost:3000',
     'http://api.movies.nomoredomainsicu.ru',
     'https://api.movies.nomoredomainsicu.ru',
-    'https://api.movies.nomoredomainsicu.ru/signin',
-    'https://api.movies.nomoredomainsicu.ru/signup',
     'http://movies.nomoredomainsicu.ru',
     'https://movies.nomoredomainsicu.ru',
+    'https://api.movies.nomoredomainsicu.ru/signin',
+    'https://api.movies.nomoredomainsicu.ru/signup',
   ],
 }));
 
